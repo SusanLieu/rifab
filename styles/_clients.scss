@@ -1,0 +1,24 @@
+.client-container {
+  margin-top: 11.5rem;
+}
+
+.clients {
+  /* min-height: 50vh; */
+  width: 80%;
+  margin: auto;
+
+  h5 {
+    text-align: center;
+    padding-bottom: 8rem;
+  }
+}
+
+.client-images {
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    height: 8rem;
+    margin: 0rem 5rem;
+  }
+}

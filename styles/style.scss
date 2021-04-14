@@ -1,0 +1,93 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.24rem;
+  color: #2f2f2f;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  letter-spacing: 0.08rem;
+  color: #2f2f2f;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.16rem;
+  color: #2f2f2f;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+  color: #454545;
+}
+
+h5 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.24rem;
+  color: #608c94;
+  text-transform: uppercase;
+}
+
+a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.08rem;
+  color: #2f2f2f;
+  text-decoration: none;
+}
+
+.pb1-5 {
+  padding-bottom: 1.5rem;
+}
+
+.pb2 {
+  padding-bottom: 2rem;
+}
+
+.pb3 {
+  padding-bottom: 3.5rem;
+}
+
+.pb4 {
+  padding-bottom: 4rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.body-info
+{
+  background: #fffcf7;
+}
+
+@import "home";
+@import "about";
+@import "services";
+@import "clients";
+@import "testimonial";
+@import "contact";
+@import "footer";

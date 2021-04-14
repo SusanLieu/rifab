@@ -1,0 +1,33 @@
+.services-container {
+  margin-top: 15rem;
+}
+
+.services {
+  /* max-height: 90vh; */
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  h5 {
+    text-align: center;
+    padding-bottom: 6.5rem;
+  }
+}
+
+.cards {
+
+  .cards-top, .card-bottom {
+    display: flex;
+
+    .card {
+      margin: 3.5rem;
+
+      h2 {
+        text-align: center;
+        padding-bottom: 3rem;
+      }
+    }
+  }
+}
