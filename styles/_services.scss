@@ -5,6 +5,7 @@
 .services {
   /* max-height: 90vh; */
   width: 85%;
+  // max-width: 130rem;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -23,6 +24,7 @@
 
     .card {
       margin: 3.5rem;
+      overflow: hidden;
 
       h2 {
         text-align: center;
