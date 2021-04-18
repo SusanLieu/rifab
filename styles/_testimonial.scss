@@ -38,5 +38,12 @@
 
   .author {
     margin-top: 7rem;
+
+    span:after,
+    span:before{
+      content:"\00a0\00a0\00a0\00a0\00a0";
+      text-decoration:line-through;
+      padding: 1rem;
+    }
   }
 }

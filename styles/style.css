@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -370,6 +371,13 @@ nav #logo {
 
 .testimonials .author {
   margin-top: 7rem;
+}
+
+.testimonials .author span:after,
+.testimonials .author span:before {
+  content: "\00a0\00a0\00a0\00a0\00a0";
+  text-decoration: line-through;
+  padding: 1rem;
 }
 
 .contact-container {
