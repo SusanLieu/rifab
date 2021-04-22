@@ -16,18 +16,64 @@
   
   .contact-info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+
+    // .method-container {
+    //   flex: 0 1 30rem;
+    //   margin: 3.5rem;
+
+    //   .method {
+    //     display: table;
+    //     margin: 0rem auto;
+
+    //     ul {
+    //       list-style: none;
+    //     }
+    //   }
+    // }
 
     .method-container {
       flex: 1;
 
       .method {
         display: table;
-        margin: 0rem auto;
+        margin: 2.5rem auto;
+
+        h2 {
+          padding-bottom: 1.5rem;
+        }
   
         ul {
           list-style: none;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  // .method-container {
+  //   flex: 0 1 20rem;
+  //   margin: 3.5rem;
+
+  //   .method {
+  //     h2 {
+  //       font-size: 2.4rem;
+  //     }
+  //     ul {
+  //       h4 {
+  //         font-size: 1.4rem;
+  //       }
+  //     }
+  //   }
+  // }
+  .contact-info {
+    flex-direction: column;
+    .method-container {
+      .method {
+        display: flex;
+        text-align: center;
       }
     }
   }

@@ -219,9 +219,6 @@ nav #logo {
 }
 
 @media screen and (max-width: 924px) {
-  .home {
-    min-height: 65vh;
-  }
   .landing {
     -ms-grid-columns: 7.5% 1fr 7.5%;
         grid-template-columns: 7.5% 1fr 7.5%;
@@ -256,11 +253,30 @@ nav #logo {
   .big-text {
     font-size: 4.2rem;
   }
+  .contact-button {
+    padding: 1.5rem 3rem !important;
+  }
+}
+
+@media screen and (max-width: 414px) {
   .landing .info {
     width: 100%;
   }
-  .contact-button {
-    padding: 1.5rem 3rem !important;
+  .landing .info h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .landing .info h4 {
+    padding-bottom: 3rem;
+  }
+  .landing .info .big-text {
+    font-size: 3.6rem;
+  }
+  .landing .info .contact-button {
+    font-size: 1.4rem;
+  }
+  nav ul {
+    display: none;
   }
 }
 
@@ -361,20 +377,35 @@ nav #logo {
   padding-bottom: 6.5rem;
 }
 
-.cards .cards-top, .cards .card-bottom {
+.cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.cards .cards-top .card, .cards .card-bottom .card {
+.cards .card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30rem;
+          flex: 0 1 30rem;
   margin: 3.5rem;
-  overflow: hidden;
 }
 
-.cards .cards-top .card h2, .cards .card-bottom .card h2 {
+.cards .card h2 {
   text-align: center;
   padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 870px) {
+  .cards .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40rem;
+            flex: 0 1 40rem;
+  }
 }
 
 .client-container {
@@ -423,6 +454,13 @@ nav #logo {
       align-self: center;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+@media screen and (max-width: 414px) {
+  .logo, .logistikfrakt {
+    height: 4rem;
+    padding-bottom: 1.2rem;
+  }
 }
 
 .testimonial-container {
@@ -520,12 +558,6 @@ nav #logo {
 }
 
 .testimonials .testimonial-slider .testimonial-content .testimonial-text {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
   font-style: italic;
   text-align: center;
   -ms-flex-item-align: center;
@@ -536,12 +568,6 @@ nav #logo {
 }
 
 .testimonials .testimonial-slider .testimonial-content .author {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
   font-size: 1.6rem;
   font-weight: 400;
   letter-spacing: 0.24rem;
@@ -747,6 +773,26 @@ nav #logo {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .testimonial-text h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .testimonials .testimonial-slider .testimonial-content {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2/5;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+  }
+  .testimonials .testimonial-slider .arrow {
+    display: none;
+  }
+}
+
 .contact-container {
   margin-top: 12rem;
   padding-top: 10rem;
@@ -768,6 +814,8 @@ nav #logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -781,11 +829,30 @@ nav #logo {
 
 .contact .contact-info .method-container .method {
   display: table;
-  margin: 0rem auto;
+  margin: 2.5rem auto;
+}
+
+.contact .contact-info .method-container .method h2 {
+  padding-bottom: 1.5rem;
 }
 
 .contact .contact-info .method-container .method ul {
   list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-info .method-container .method {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
 }
 
 .footer {
@@ -802,5 +869,11 @@ nav #logo {
 
 .footer .footer-links {
   padding: 0rem 0.8rem;
+}
+
+@media screen and (max-width: 414px) {
+  h2 {
+    font-size: 2.6rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

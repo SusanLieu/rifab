@@ -91,9 +91,7 @@ nav {
 }
 
 @media screen and (max-width: 924px) {
-  .home {
-    min-height: 65vh;
-  }
+  
   .landing {
     grid-template-columns: 7.5% 1fr 7.5%;
     grid-template-rows: 1fr;
@@ -119,14 +117,40 @@ nav {
   .big-text{
     font-size: 4.2rem;
   }
-
-  .landing {
-    .info{
-      width: 100%;
-    }
-  }
   
   .contact-button {
     padding: 1.5rem 3rem !important;
   }
 }
+
+@media screen and (max-width: 414px) {
+  .landing {
+    .info{
+      width: 100%;
+
+      h3 {
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+      }
+
+      h4 {
+        padding-bottom: 3rem;
+      }
+
+      .big-text {
+        font-size: 3.6rem;
+      }
+
+      .contact-button {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  
+  nav {
+    ul {
+      display: none;
+    }
+  }
+}
+
