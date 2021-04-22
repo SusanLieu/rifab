@@ -18,18 +18,35 @@
 }
 
 .cards {
-
-  .cards-top, .card-bottom {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     .card {
+      flex: 0 1 30rem;
       margin: 3.5rem;
-      overflow: hidden;
-
+      
       h2 {
         text-align: center;
         padding-bottom: 3rem;
       }
     }
+}
+
+@media screen and (max-width: 870px) {
+  .cards{
+    .card{
+      flex: 0 1 40rem;
+    }
   }
 }
+
+// @media screen and (max-width: 600px) {
+//   .cards {
+//     display: block;
+//     .cards-top, .card-bottom {
+//       display: block;
+//       margin-bottom: 20px;
+//     }
+//   }
+// }

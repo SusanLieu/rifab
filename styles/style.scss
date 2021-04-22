@@ -92,3 +92,9 @@ a {
 @import "testimonial";
 @import "contact";
 @import "footer";
+
+@media screen and (max-width: 414px) {
+  h2 {
+    font-size: 2.6rem;
+  }
+}
